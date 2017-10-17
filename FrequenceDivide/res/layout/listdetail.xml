@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+ <LinearLayout
+     android:paddingTop="5dp"
+     android:id="@+id/llFirst"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical" >
+<TextView
+            android:textSize="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:textColor="#5577FF"
+    android:text="版本信息:"/>
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow>
+        <TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:text="版本号："/>
+        <TextView
+         android:id="@+id/ tx_number"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:text=""/>
+  </TableRow>
+    <TableRow>
+    	<TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:text="版本名称："/> 
+   	<TextView
+   	    android:id="@+id/tx_name"
+    	android:layout_width="match_parent"
+   	 	android:layout_height="wrap_content" 
+    	android:text=""/> 
+    </TableRow>
+    <TableRow>
+    	<TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:text="版本日期："/> 
+   	<TextView
+   	    android:id="@+id/tx_date"
+    	android:layout_width="match_parent"
+   	 	android:layout_height="wrap_content" 
+    	android:text=""/> 
+    </TableRow>    
+</TableLayout>
+</LinearLayout>
+
+<LinearLayout
+    
+     android:paddingTop="5dp"
+    android:layout_below="@+id/llFirst"
+    android:id="@+id/llSecond"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+         android:textSize="20dp"
+        android:id="@+id/btn_click"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:textColor="#5577FF"
+    	android:text="业务频段："/>
+
+		<ListView
+		    android:id="@+id/frequence_list"
+		    android:layout_width="match_parent"
+		    android:layout_height="161dp" >
+		    </ListView>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/llThird"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/llSecond"
+    android:orientation="vertical"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="业务信息:"
+        android:textColor="#5577FF"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/service_list"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_weight="73.40" >
+    </ListView>
+</LinearLayout>
+
+<LinearLayout
+         android:paddingTop="5dp"
+     android:layout_below="@+id/llThird"
+     android:id="@+id/llForth"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView 
+         android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5555FF"
+        android:text="校注信息:"/>
+
+    <ListView
+        android:id="@+id/addtion_list"
+        android:layout_width="match_parent"
+        android:layout_height="54dp" >
+  
+    </ListView>
+
+</LinearLayout>  
+</RelativeLayout>
